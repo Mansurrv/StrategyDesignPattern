@@ -4,16 +4,16 @@ import org.example.Interface.EmployeeStrategy;
 import org.example.Position.Employee;
 import org.example.Position.EmployeeContext;
 
-public class PersonalTrainingStrategy implements EmployeeStrategy {
+public class GroupTrainingStrategy implements EmployeeStrategy {
     private String designation;
 
-    public PersonalTrainingStrategy(String designation) {
+    public GroupTrainingStrategy(String designation) {
         this.designation = designation;
     }
 
     @Override
     public void executeStrategy(EmployeeContext context) {
-        System.out.println("Personal training strategy: " + designation);
+        System.out.println("Group training strategy: " + designation);
     }
 }
 
